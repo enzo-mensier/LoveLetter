@@ -1,11 +1,11 @@
-#  Invitation Saint-Valentin
+#  LoveLetter
 
-## 🚀 Aperçu du Portfolio
+## 🚀 Aperçu de la carte d'invitation
 
 🔗 <u>[Accédez à l'inivation](https://mensierenzo.netlify.app)</u>
 
 <div style="text-align: center;">  
-<img src="images/preview.png" width="40%" alt="Aperçu de la carte d'inivtation"/>  
+<img src="images/preview.png" width="60%" alt="Aperçu de la carte d'inivtation"/>  
 </div>
 
 ## ✨ Fonctionnalités
@@ -16,11 +16,11 @@
 
 ## 🛠️ Technologies utilisées  
 
-- **Git/GitHub** : Plateforme utile la gestion de code source et la collaboration dans un projet de développement.
-- **HTML** : Structure de la carte d'invitation.
-- **CSS** : Mise en page de la carte d'inivation.
-- **JavaScript** : Utile pour créer une animation et des notifications interactives
-- **Netlify** : Services d'hébergement pour des sites web statiques comme ce projet.
+*   **HTML :** Structure la page web et le contenu de l'invitation.
+*   **CSS :** Met en forme l'invitation et ajoute des styles visuels attrayants.
+*   **JavaScript :** Crée les animations interactives, gère les notifications et la logique du bouton "NON".
+*   **Git/GitHub :** Permet de gérer le code source, de collaborer et de partager le projet.
+*   **Netlify :** Héberge le site web et le rend accessible en ligne.
 
 ##  Structure du projet 
 
@@ -31,3 +31,8 @@ root
 └── README.md
     ├── images
     └── preview.png
+
+## ⚙️ Comment lancer le projet en local
+
+1.  Clonez le dépôt : `git clone https://github.com/enzo-mensier/LoveLetter.git`
+2.  Ouvrez le fichier `love.html` dans votre navigateur.
