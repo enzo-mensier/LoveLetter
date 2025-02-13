@@ -2,7 +2,7 @@
 
 ## 🚀 Aperçu de la carte d'invitation
 
-🔗 <u>[Accédez à l'inivation](https://mensierenzo.netlify.app)</u>
+🔗 <u>[Accédez à l'inivation](https://enzo-love.netlify.app)</u>
 
 <div style="text-align: center;">  
 <img src="images/preview.png" width="60%" alt="Aperçu de la carte d'inivtation"/>  
@@ -21,16 +21,6 @@
 *   **JavaScript :** Crée les animations interactives, gère les notifications et la logique du bouton "NON".
 *   **Git/GitHub :** Permet de gérer le code source, de collaborer et de partager le projet.
 *   **Netlify :** Héberge le site web et le rend accessible en ligne.
-
-##  Structure du projet 
-
-root
-├── love.html
-├── love.css
-├── love.js
-└── README.md
-    ├── images
-    └── preview.png
 
 ## ⚙️ Comment lancer le projet en local
 
