@@ -2,7 +2,7 @@
 
 ## 🚀 Aperçu de la carte d'invitation
 
-🔗 <u>[Accédez à l'inivation](https://enzo-love.netlify.app)</u>
+🔗 <u>[Accédez à l'invitation](https://enzo-love.netlify.app)</u>
 
 <div style="text-align: center;">  
 <img src="images/preview.png" width="60%" alt="Aperçu de la carte d'inivtation"/>  
