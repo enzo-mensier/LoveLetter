@@ -8,19 +8,41 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     font-family: 'Georgia', serif;
     position: relative;
-    z-index: 1;
+    overflow: hidden; /* Pour contenir les coeurs flottants */
 }
 
 .heart {
     color: #ff4d4d;
     font-size: 40px;
     margin: 20px 0;
+    transition: transform 0.3s ease; /* Ajout d'une transition pour le scale */
 }
+
+.top-heart {
+    animation: pulse 1.5s infinite ease-in-out; /* Animation de pulsation pour le coeur du haut */
+}
+.bottom-heart {
+    animation: pulse 1.5s infinite ease-in-out reverse; /* Animation de pulsation inversée pour le coeur du bas */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 .title {
     color: #d63384;
     font-size: 28px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Ajout d'une ombre au texte */
 }
 
 .message {
@@ -28,6 +50,8 @@
     font-size: 18px;
     line-height: 1.6;
     margin: 20px 0;
+    text-align: center; /* Justification du texte */
+    padding: 0 20px; /* Ajout de padding pour une meilleure lisibilité */
 }
 
 .details {
@@ -35,6 +59,8 @@
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
+    backdrop-filter: blur(5px); /* Ajout d'un effet de flou en arrière-plan */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .signature {
@@ -59,7 +85,32 @@
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Ajout d'une ombre au bouton */
+    overflow: hidden; /* Pour l'effet de vague au clic */
 }
+
+.btn::before { /* Création de l'effet de vague */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur de l'effet de vague */
+    opacity: 0;
+    transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.btn:active::before { /* Animation de l'effet de vague au clic */
+    width: 300%;
+    height: 300%;
+    opacity: 1;
+}
+
 
 .btn-oui {
     background-color: #ff4d4d;
@@ -76,7 +127,7 @@
     color: #ff4d4d;
     font-size: 24px;
     pointer-events: none;
-    animation: float 3s ease-in forwards;
+    animation: float 3s linear forwards; /* Changement pour une animation linéaire */
     z-index: 0;
 }
 
